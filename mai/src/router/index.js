@@ -1,15 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import '../assets/css/header.css'
+import '../assets/css/reset.css'
+import '../assets/css/footer.css'
 
 Vue.use(Router)
 
+import Home from '../views/home.vue'
+import Shop from '../views/shop.vue'
+
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
+    { path:'/', component:Home },
+    { path:'/Home', component:Home }
   ]
 })

@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <headerNav></headerNav>
+    <router-view></router-view>
+    <footerNav></footerNav>
   </div>
 </template>
 
 <script>
+import headerNav from '@/components/header-nav'
+import footerNav from '@/components/footer-nav'
 export default {
-  name: 'App'
+  name: 'app',
+  components:{
+    headerNav,
+    footerNav
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
