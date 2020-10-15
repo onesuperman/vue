@@ -9,7 +9,7 @@
   			<ul class="colors-list">
   				<li v-for="(item,index) in item.sku_info">
             <a href="javascript:;" class="active" :title="item.spec_json.show_name" @click="tab(index)">
-              <img :src="'http://img01.smartisanos.cn/'+item.spec_json.image+'/20X20.jpg'">
+              <img :src="'http://img01.smartisanos.cn/'+item.spec_json.image+'20X20.jpg'">
             </a>
           </li>
   			</ul>

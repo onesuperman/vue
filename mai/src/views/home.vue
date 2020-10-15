@@ -9,15 +9,13 @@
   				<li><a href="javascript:;" class="">价格高到低</a></li>
   			</ul>
   		</div>
-  		<!--手机配件-->
   		<div class="gray-box">
-  			<header class="title-header">
-  				<h5 class="title">热门商品</h5>
-  			</header>
   			<div class="item-box">
           <shopItem v-for="(item,index) in goodsData" :key='index' :item='item'></shopItem>
   			</div>
   		</div>
+      <!--提示-->
+      <prompt></prompt>
   	</div>
   </div>
 </template>
@@ -25,6 +23,7 @@
 <script>
   import  goodsData from '../assets/lib/newGoodsData.js'
   import shopItem from '../components/shop-item.vue'
+  import prompt from '../components/prompt.vue'
   export default{
     data(){
       return {
@@ -32,7 +31,8 @@
       }
     },
     components:{
-      shopItem
+      shopItem,
+      prompt
     }
   }
 </script>

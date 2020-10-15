@@ -7,7 +7,6 @@ import '../assets/css/footer.css'
 Vue.use(Router)
 
 import Home from '../views/home.vue'
-import Shop from '../views/shop.vue'
 
 export default new Router({
   routes: [
